@@ -27,7 +27,7 @@
         
         <div class="hitpoints">
             <h5>Obi-Wan Kenobi</h5>
-            <h5>Hit points <span class="badge badge-secondary subtitle">120</span></h5>
+            <h5>Hit points <span id = "obi-wan-hitpoints" class="badge badge-secondary subtitle currenthitpoints">120</span></h5>
         </div>
     </div>
 
@@ -35,7 +35,7 @@
         <img src="assets/images/Luke.png" alt="Luke Skywalker" />
         <div class="hitpoints">
                 <h5>Luke Skywalker</h5>
-            <h5>Hit points <span class="badge badge-secondary subtitle">100</span></h5>
+            <h5>Hit points <span id = "luke-hitpoints" class="badge badge-secondary subtitle currenthitpoints">100</span></h5>
         </div>
     </div>
 
@@ -43,7 +43,7 @@
         <img src="assets/images/emperor.png" alt="Darth Sidious" />
         <div class="hitpoints">
             <h5>Darth Sidious</h5>
-            <h5>Hit points <span class="badge badge-secondary subtitle">150</span></h5>
+            <h5>Hit points <span id = "sidious-hitpoints" class="badge badge-secondary subtitle currenthitpoints">150</span></h5>
         </div>
     </div>
 
@@ -51,7 +51,7 @@
         <img src="assets/images/darth-maul.png" alt="Darth Maul" />
         <div class="hitpoints">
             <h5>Darth Maul</h5>
-            <h5>Hit points <span class="badge badge-secondary subtitle">180</span></h5>
+            <h5>Hit points <span id = "maul-hitpoints" class="badge badge-secondary subtitle currenthitpoints">180</span></h5>
         </div>
     </div>
 
@@ -61,36 +61,42 @@
 
 <div id="actionmessage">
     <h5>Select your opponent:</h5> 
-    <button id="retreat" type="button" class="btn btn-success battle">Retreat</button>
     <button id="attack"type="button" class="btn btn-danger battle">Attack</button>
     <button id="reset" type="button" class="btn btn-primary battle">Reset</button>
 </div>
 
 <br><br>
 
-<div id="usercontainer" class="badge badge-secondary subtitle">
+<div id="playercontainer" class="badge badge-secondary subtitle">
 
     <div id ="obi-wan" class="character"> <!--Obi-wan _-->
         <img src="assets/images/ObiWanKenobi.png" alt="Obi Wan Kenobi" />
         
         <div class="hitpoints">
             <h5>Obi-Wan Kenobi</h5>
-            <h5>Hit points <span class="badge badge-secondary subtitle">120</span></h5>
+            <h5>Hit points <span id = "obiwan-hitpoints" class="badge badge-secondary subtitle currenthitpoints">120</span></h5>
         </div>
     </div>
 </div>
 
-<div id="aicontainer" class="badge badge-secondary subtitle">
+<div id="opponentcontainer" class="badge badge-secondary subtitle">
 
     <div id="maul" class="character">
             <img src="assets/images/darth-maul.png" alt="Darth Maul" />
             <div class="hitpoints">
                 <h5>Darth Maul</h5>
-                <h5>Hit points <span class="badge badge-secondary subtitle">180</span></h5>
+                <h5>Hit points <span id = "maul-hitpoints"class="badge badge-secondary subtitle currenthitpoints">180</span></h5>
             </div>
         </div>
-
 </div>
+<div id="battlereport" class="badge badge-secondary subtitle">
+    <p>Battle Report:</p>
+    <p>You took 18 points of damage:</p>
+    <br>
+    <p>your opponent took 15 points of damage.</p>
+</div>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="assets/javascript/game.js"></script>
 </body>
