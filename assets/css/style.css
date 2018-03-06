@@ -1,7 +1,7 @@
 body {
     background-image: url("../images/bckgrnd2.jpg");
     background-color: #000000;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
 h1 {
