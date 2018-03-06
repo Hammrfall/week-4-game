@@ -93,12 +93,12 @@ function addCharacter(CharacterObject, AreaId){
     
     var nextHolder = document.createElement("div");
     $(nextHolder).addClass("hitpoints");
-    $(nextHolder).html ('<h5>' + CharacterObject.name + '<br>' +  "Hit points:" + '</h5>');
+    $(nextHolder).html ('<h5>' + CharacterObject.name + '</h5><br>' +  "<h5>Hit points:");
     
     var nextNextHolder = document.createElement("span")
     $(nextNextHolder).attr("id",CharacterObject.id);
     $(nextNextHolder).addClass("badge badge-secondary subtitle " + CharacterObject.id  + "currenthitpoints")
-    $(nextNextHolder).html ('<h5>' + CharacterObject.currentHitPoints + '</h5>');
+    $(nextNextHolder).html ("<h5>" + CharacterObject.currentHitPoints + "</h5>");
      //<h5>Hit points<span id = "' + CharacterObject.name + '-hitpoints" class="badge badge-secondary subtitle currenthitpoints">'+ CharacterObject.currentHitPoints +'</span></h5>');
     $(nextHolder).append(nextNextHolder);
      $(holder).append(nextHolder);
