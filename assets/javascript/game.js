@@ -10,7 +10,7 @@ var stateOfGame = 1;
 var playerCharacter;
 var opponentCharacter;
 var opponentsDefeated = 0;
-var LevelValue = 5;
+var LevelValue = 2;
 
 function Character() {
     this.id = "";
@@ -35,7 +35,7 @@ luke.classes = "character";
 luke.maxHitPoints = 100;
 luke.currentHitPoints = luke.maxHitPoints;
 luke.level = 0;
-luke.attackDice = 24;
+luke.attackDice = 28;
 
 var obiWan = new Character;
 obiWan.id = "obi-wan";
@@ -55,7 +55,7 @@ sidious.classes = "character";
 sidious.maxHitPoints = 150;
 sidious.currentHitPoints = sidious.maxHitPoints;
 sidious.level = 0;
-sidious.attackDice = 16;
+sidious.attackDice = 12;
 
 var maul = new Character;
 maul.id = "maul";
@@ -65,7 +65,7 @@ maul.classes = "character";
 maul.maxHitPoints = 180;
 maul.currentHitPoints = maul.maxHitPoints;
 maul.level = 0;
-maul.attackDice = 12;
+maul.attackDice = 6;
 
 $(document).ready(function () {
     $("#battlereport").html("Select your character: ");
